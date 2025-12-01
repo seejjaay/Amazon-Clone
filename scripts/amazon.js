@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import { cart, addToCart } from '../data/cart.js';
 import { products } from '../data/products.js';
+=======
+import { cart } from "../data/cart"
+>>>>>>> e89547172b550802368ec1400fc1198f5753f575
 
 let productsHTML = ''
 
