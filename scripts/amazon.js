@@ -4,6 +4,7 @@ import { formatCurrency } from './utils/money.js';
 
 let productsHTML = ''
 
+// displays products by going through them one by one
 products.forEach((product)=>{
     productsHTML += `
         <div class="product-container">
@@ -57,9 +58,11 @@ products.forEach((product)=>{
     `
     })
 
+// transfer the products to the html
 document.querySelector('.js-products-grid').
 innerHTML = productsHTML
 
+//updates the cart quantity header
 updateCartQuantityHeader()
 
 function updateCartQuantityHeader(){
