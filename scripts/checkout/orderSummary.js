@@ -160,6 +160,7 @@ export function renderOrderSummary() {
       updateCartQuantity();
 
       htmlProduct.classList.remove("is-editing-quantity");
+      renderPaymentSummary();
     });
   });
 
