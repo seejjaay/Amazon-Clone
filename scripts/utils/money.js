@@ -3,4 +3,3 @@ export function formatCurrency(priceCents) {
 }
 
 export default formatCurrency;
-~~
