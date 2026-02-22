@@ -35,16 +35,16 @@ export function addToCart(productId) {
   });
 
   // used for setting custom quantity when adding item
-  // let quantity = document.querySelector(
-  //   `.js-quantity-selector-${productId}`,
-  // ).value;
-  let quantity = 1; // added this for the jasmine test case, reference error
+  let quantity = document.querySelector(
+    `.js-quantity-selector-${productId}`,
+  ).value;
+
   if (matchingItem) {
     matchingItem.quantity += Number(quantity);
   } else {
     cart.push({
       productId: productId,
-      quantity: 1, //Number(quantity)
+      quantity: Number(quantity),
       deliveryOptionId: "1",
     });
   }
