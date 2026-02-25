@@ -16,10 +16,6 @@ import { renderPaymentSummary } from "./paymentSummary.js";
 export function renderOrderSummary() {
   let cartSummaryHTML = "";
 
-  const today = dayjs();
-  const deliveryDate = today.add(7, "days");
-  console.log(deliveryDate.format("dddd, MMMM D "));
-
   cart.forEach((cartItem) => {
     const productId = cartItem.productId;
 
